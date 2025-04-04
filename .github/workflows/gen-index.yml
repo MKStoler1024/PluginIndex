@@ -36,7 +36,7 @@ jobs:
           pwsh -ep Bypass -c .\tools\generate-md5.ps1 ./out
 
       - name: Upload Artifacts to Actions
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: index-artifacts
           path: ./out/*
